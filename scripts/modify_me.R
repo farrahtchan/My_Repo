@@ -5,7 +5,7 @@ theme_ugly = function()
 
   ## then modify theme_bw() with the seven subcomponents below
     theme(panel.background = element_rect(fill="grey25",
-                                          linewidth=2, color="grey0"),
+                                          linewidth=2, color="grey10"),
           panel.grid.minor = element_line(color="grey50", linetype=4),
           panel.grid.major = element_line(color="grey100"),
           plot.background = element_rect(fill = "lightgreen"),
@@ -20,7 +20,7 @@ theme_ugly = function()
 
 modifyGeoms = function()
 { 
-  update_geom_defaults("line", list(color = "yellow",
+  update_geom_defaults("line", list(color = "blue",
                                     fill = "black"));
   update_geom_defaults("point", list(color = "green"));
   update_geom_defaults("smooth", list(color = "red",
