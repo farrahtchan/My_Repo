@@ -49,3 +49,8 @@ plot5 = ggplot( data=weatherData ) +
   theme( axis.text.x=element_text(angle=90, vjust=0.5) ) +
   theme_bw();
 plot(plot5);
+
+save(weatherData, plot1, plot2, file="data/mult_obj.rdata")
+save.image(file="data/all_obj.rdata")
+load(file="data/mult_obj.rdata")
+load(file="data/all_obj.rdata")
