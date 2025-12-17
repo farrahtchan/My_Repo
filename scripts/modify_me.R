@@ -14,6 +14,7 @@ theme_ugly = function()
           axis.text = element_text(color="red", family="mono", size=9));
   
   ### return newTheme to the caller
+  # make a change
   ##  You could take this line out -- but it is bad programming practice...
   return(newTheme);
 }
